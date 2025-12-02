@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Math Worksheet Generator</title>
+
+  <!-- PLACEHOLDER FAVICON -->
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<center>
+<h1><img src="favicon.png" width="28"> Math Worksheet (Std - 2)</h1>
+<div id="levelDisplay" style="font-weight:bold; margin-bottom:10px;"></div>
+<h3>Name : ____________________________  Date : _____________ Marks : _____
+
+<hr>
+</h3>
+<div class="controls no-print">
+  <label for="level"><font color=Red>Level:</font></label>
+<select id="level" onchange="generateWorksheet()">
+  <option value="easy" style="color:green;">Easy</option>
+  <option value="medium" style="color:orange;" Selected>Medium</option>
+  <option value="hard" style="color:brown;">Hard</option>
+</select>
+&nbsp
+  <button onclick="generateWorksheet()">✨ Generate New Sheet</button>
+  <font color=blue> Everytime generates new sets of questions!! Reay to Print!!</font>
+  <button onclick="window.print()">🖨️ Print</button>
+  <hr>
+</div></center>
+<h3>
+<br>
+
+
+<div id="worksheet">
+
+<div class="grid3">
+
+  <div>
+    
+    <div id="add"></div>
+  </div>
+
+  <div>
+    
+    <div id="sub"></div>
+  </div>
+
+  <div>
+    
+    <div id="mul"></div>
+  </div>
+
+  <div>
+    
+    <div id="div"></div>
+  </div>
+
+</div>
+<br>
+<br>
+<div class="grid3">
+
+  <div>
+   
+    <div id="vadd"></div>
+  </div>
+
+  <div>
+    
+    <div id="vsub"></div>
+  </div>
+
+  <div>
+    
+    <div id="vmul"></div>
+  </div>
+
+</div>
+
+<div class="page-break">
+<br>
+<div id="longdiv" class="grid3"></div>
+
+<div id="mini"></div>
+
+</div></h3>
+
+
+<hr>
+  <footer>Made with 💓 by Sanjib Kumar Dutta<br><br>A product from skdutta <br><img src="icon.png" width="100" style="float:centre"></footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

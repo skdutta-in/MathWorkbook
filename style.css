@@ -1,0 +1,88 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.row {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.problem {
+  width: 150px;
+  font-family: monospace;
+  margin-bottom: 14px;
+}
+
+.num {
+  text-align: right;
+  font-size: 20px;
+}
+
+.line {
+  border-bottom: 1px solid black;
+}
+
+.answer {
+  height: 22px;
+  border-bottom: 1px solid black;
+}
+
+
+/* LONG DIVISION */
+.division-text {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.division-space {
+  height: 140px;
+  margin-left: 8px;
+}
+
+/* MINI */
+#mini ol {
+  font-size: 17px;
+}
+
+
+#mini ol li {
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+
+/* PRINT */
+@media print {
+  button {
+    display: none;
+  }
+  .grid3 {
+    gap: 12px;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .page-break {
+    page-break-before: always;   /* Old browsers */
+    break-before: page;          /* Modern browsers */
+  }  
+  
+}
+
+ footer{ text-align:center; padding:20px; opacity:0.8; }
+ 
+
+
