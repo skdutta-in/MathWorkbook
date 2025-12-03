@@ -202,7 +202,8 @@ if(level==="hard"){
         <div class="num">${p.bottom}</div>
         <div class="line"></div>
         ${doubleLine?'<div class="line"></div>':''}
-                    <br><br><br>
+                    <br><br>
+        <div class="answer"></div>
         <div class="answer"></div>
       </div>
     `;
