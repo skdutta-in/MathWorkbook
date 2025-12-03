@@ -148,7 +148,7 @@ async function loadMini() {
     let data = await res.json();
 
     // if your JSON has levels, filter here, else random pick
-    let pick = data.sort(()=>0.5-Math.random()).slice(0,6);
+    let pick = data.sort(()=>0.5-Math.random()).slice(0,10);
 
     let out="<ol>";
     pick.forEach(q => out+=`<li>${q.replace("____","__________")}</li>`);
