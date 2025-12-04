@@ -53,7 +53,7 @@ function horizontalMul() {
   let min, max, min1, max1;
 
   if(level==="easy"){ min=2; max=9; min1=2; max1=6; }
-  else if(level==="medium"){ min=5; max=9; min1=6; max1=9;}
+  else if(level==="medium"){ min=2; max=9; min1=5; max1=12;}
   else { min=7; max=20; min1=2; max1=10;}
 
   fill("mul", () => `${r(min,max)} X ${r(min1,max1)} = ___________`);
